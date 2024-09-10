@@ -152,7 +152,8 @@
 								'QUERY_LIMIT_EXCEEDED'   => 'Too many requests, maximum 2 query by second',
 								'ERROR_METHOD_NOT_FOUND' => 'Method not found! You can see the permissions of the application: CRest::call(\'scope\')',
 								'NO_AUTH_FOUND'          => 'Some setup error b24, check in table "b_module_to_module" event "OnRestCheckAuth"',
-								'INTERNAL_SERVER_ERROR'  => 'Server down, try later'
+								'INTERNAL_SERVER_ERROR'  => 'Server down, try later',
+								'CONNECTION_ERROR'       => 'Error connecting to authorization server'
 							];
 							if(!empty($arErrorInform[ $result[ 'error' ] ]))
 							{
